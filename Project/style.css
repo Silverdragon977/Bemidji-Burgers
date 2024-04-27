@@ -1,0 +1,159 @@
+body{
+    background-image: url('./pics/background1.jpg');
+    background-size: 100%;
+    padding-top: 50px;
+}
+.wrapper{
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: gray solid 25px;
+    border-style: groove;
+    box-shadow: 15px 25px;
+}
+header{color: red;}
+#navLogo{width: 100px;}
+nav{
+    padding: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightgoldenrodyellow;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    border: lightcoral solid 5px;
+    border-radius: 5px;
+}
+nav ul{
+    align-items: right;
+    margin-left: 5%;
+}
+nav ul li{
+    text-align: none;
+    text-decoration: none;
+    display: inline;
+    list-style: none;
+    margin: 0 20px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+}
+main{
+    width: 90%;
+    text-align: center;
+    padding: 0, 75px;
+    border: lightcoral double 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+img{
+    width: 100px;
+}
+.img        {
+    width: 250px;
+    height: 300px;
+    border: silver solid 10px;
+    border-radius: 7px;
+}
+/* main web page images */
+#indexHero{
+    margin-top: 30px;
+    width: 90%;
+    height: 370px;
+    border: green groove 15px;
+    border-radius: 12px;
+}
+#indexImg{
+    float:right;
+    width:500px;
+    height:300px;
+    border: lightseagreen groove 15px;
+    border-radius: 5px;
+    margin-left:15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#contactUsHero{
+    margin-top: 30px;
+    border: green groove 15px;
+    border-radius: 12px;
+    width: 90%;
+    height: 370px;
+}
+#menuHero{
+    margin-top: 30px;
+    width: 90%;
+    height: 370px;
+    border: lightblue groove 15px;
+    border-radius: 12px;
+}
+#indexText{width: 80%;}
+.menucolumn{width:31%;}
+.singlemenu img{
+    border-radius: 50%;
+    max-width: 110px;
+    border: 1px solid #ddd;
+    padding: 3px;
+    margin-right: 15px;
+    transition: .3s;
+}
+.singlemenu:hover img{
+    transform: rotate(360deg);
+}
+/*  This table is for the menu.html     */
+#menuTable th{
+    width: 33%;
+}
+#menuTable img{
+    width: 100%;
+}
+
+/* This table css is for the ingredients.html   */
+#ingredientsTable tr{
+    border: solid red 2px;
+}
+
+/* This table css is for the calender.html */
+#calenderTable table{
+    width: 80%;
+    border: lightblue solid 10px;
+    border-style:ridge;
+}
+#calenderTable table td:hover{background-color: lightgoldenrodyellow;}
+#calenderTable td:nth-child(even) {background-color: #f2f2f2;}
+#calenderTable th {background-color: lightslategray; color: white;}
+
+
+/* This table css is for the feedback.html */
+#applicationTable table{
+    width: 90%;
+    border: lightblue solid 10px;
+    border-style:ridge;
+}
+#feedbackTable td{padding-bottom: 20px;}
+/* This table css is for the about.html*/
+.AboutTable{
+    width: 90%;
+    border: 2px solid black;
+}
+.AboutTable td, th{
+    width: 33.33%;
+    text-align: center;
+}
+.AboutTable img{
+    width: 95%;
+}
+
+

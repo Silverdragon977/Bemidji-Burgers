@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaver Burgers | Menu </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+    <div class="wrapper">
+        <br>
+        <center>
+        <header>
+            <nav align="right">
+                <a href="./index.html">
+                    <img src="./pics/LOGO.jpg" id="navLogo" title="Icon" alt="Navigation Bar" align="left">
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                    <li><a href="./index.html"><u>Homepage</u></a></li>
+                    <li><a href="./Menu.html"><u>Menu</u></a></li>
+                    <li><a href="./ContactUs.html"><u>Contact Us :D</u></a></li>
+                    <li><a href="./signInSignOut.html"><u>Sign In/Out</u></a></li>
+                    <!--  This nbsp below makes the end of the ul look like the beginning  -->
+                </ul>
+            </nav>
+        </header>
+        <br><br>
+        <main>
+            <br>
+            <h1>Our Menu</h1>
+            <img id="menuHero"  src="./pics/img19.jpg" width="90%" alt="Campus Building">
+            <br><br>
+            <p><a href="Ingredient.html">Ingredient list</a></p>
+            <br><br><br><center>
+            <table border="1">
+                <tr>
+                    <td>Add Money</td>
+                    <td colspan="2"><input id="money"  type="text" value="0"></td>
+                </tr>
+                <tr>
+                    <td><label>Wallet </label></td>
+                    <td colspan="2"><input id="moneyLeft"  type="text" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label>Total </label></td>
+                    <td><input colspan="2" id="totalBill" type="text" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Add to Wallet" onclick="addMoney()"></td>
+                    <td><input type="button" value="Add Items To Cart" onclick="addToCart()"></td>
+                    <td><input type="button" value="Pay for Food" onclick="pay()"></td>
+                </tr>
+            </table>
+            </center>
+            <br><br>
+            <div id="menuTable">
+                <form>
+                <table border="2" cellpadding="2" cellspacing = "2" align="center">
+<!--------------------------------------- First Row of Items   Below ------------------------------------------>                    
+                    <tr> 
+                        <th colspan="3"><img src="./pics/BEAVYCOFY.jpg"></th>
+                        <th colspan="3"><img src="./pics/BEAVERCHALLENGE.jpg"></th>
+                        <th colspan="3"><img src="./pics/BUILDALOGS.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Beav Coffee</td><td>$7.00</td>
+                        <td><input id="1"  name="item" type="checkbox" value="7"></td>
+                        <td colspan="1">Beaver Challenge</td><td>$2.25</td>
+                        <td><input id="2"  name="item" type="checkbox" value="2.25"></td>
+                        <td colspan="1">Build-a-Log</td><td>$2.00</td>
+                        <td><input id="3"  name="item" type="checkbox" value="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Beaver Brewed coffee with your choice of additives<br>Extra:</td>
+                        <td colspan="3">Only for the most ruthless beavers that will eat anything</td>
+                        <td colspan="3">Buy extras to build your log pile</td>
+                    </tr>
+                    <tr>
+                        <td>$1.99</td>
+                        <td>crossanint</td>
+                        <td><input id="1-1" name="item" type="checkbox" value="1.99"></td>
+
+                        <td>$0.50</td>
+                        <td>Ketchup</td>
+                        <td><input id="2-1" name="item" type="checkbox" value="0.5"></td>
+
+                        <td>$1.75</td>
+                        <td>per log</td>
+                        <td><input id="3-1" name="item" type="checkbox" value="1.75"></td>
+                    </tr>
+                    <tr>
+                        <td>$1.50</td>
+                        <td>extra shot of esspresso</td>
+                        <td><input id="1-2" name="item" type="checkbox" value="1.5"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>$0.75</td>
+                        <td>per stick</td>
+                        <td><input id="3-2" name="item" type="checkbox" value="0.75"></td>
+                    </tr>
+                    <tr aria-rowspan="5" height="50px"><td colspan="9"></td></tr>
+<!--------------------------------------- Second Row of Items    Below   ------------------------------------------>                    
+
+                    <tr>
+                        <th colspan="3"><img src="./pics/CAVIBEAV.jpg"></th>
+                        <th colspan="3"><img src="./pics/DIOBEAV.jpg"></th>
+                        <th colspan="3"><img src="./pics/EGSSBEAV.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Cavi Beav</td><td>$23.00</td>
+                        <td><input id="4" name="item" type="checkbox" value="23"></td>
+                        <td colspan="1">Dio Beav</td><td>$14.00</td>
+                        <td><input id="5" name="item" type="checkbox" value="14"></td>
+                        <td colspan="1">Eggs Beav</td><td>$9.00</td>
+                        <td><input id="6" name="item" type="checkbox" value="9"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Toasted bark with lemon & salmon roe on top</td>
+                        <td colspan="3">Salmon Burger with kelp, anchoivies, and berries.</td>
+                        <td colspan="3">Eggs with kelp inbetween two slabs of bark</td>
+                    </tr>
+                    <tr>
+                        <td>$7.00</td>
+                        <td>another dalop of roe</td>
+                        <td><input id="4-1" name="item" type="checkbox" value="7"></td>
+                        <td>$1.50</td>
+                        <td>side of sticks</td>
+                        <td><input id="5-1" name="item" type="checkbox" value="1.5"></td>
+                        <td>$1.00</td>
+                        <td>extra kelp</td>
+                        <td><input id="6-1" name="item" type="checkbox" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>$1.00</td>
+                        <td>poached egg on top</td>
+                        <td><input id="5-2" name="item" type="checkbox" value="1"></td>
+                        <td>$1.75</td>
+                        <td>side of sticks</td>
+                        <td><input id="6-2" name="item" type="checkbox" value="1.75"></td>
+                    </tr>
+                    <tr aria-rowspan="5" height="50px"><td colspan="9"></td></tr>
+<!--------------------------------------- Third Row of Items    Below   ------------------------------------------>                    
+                    <tr>
+                        <th colspan="3"><img src="./pics/THEDAMCHALLENGE.jpg"></th>
+                        <th colspan="3"><img src="./pics/ULTIMATE BEAVER SANDWICH.jpg"></th>
+                        <th colspan="3"><img src="./pics/VEGGIEBEAV.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="1">The Dam Challenge</td><td>$225.00</td>       
+                        <td><input id="7" name="item" type="checkbox" value="225"></td>
+                        <td colspan="1">Ultimate Beaver Sandwich</td><td>$14.50</td>
+                        <td><input id="8" name="item" type="checkbox" value="14.5"></td>
+                        <td colspan="1">Veggie Beav</td><td>$12.50</td>             
+                        <td><input id="9" name="item" type="checkbox" value="12.5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Can you eat your way through a Dam worth of sticks and logs? Comes with unlimited water and seaweed.
+                            If you eat the entire Dam in less than 6 hours it's free!</td>
+                        <td colspan="3">This Beaver sandwich has it all, the bark, the sticks and wood, and even the leaves</td>
+                        <td colspan="3">Kelp, berries, lettuce, and bugs between two slabs of bark</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>$1.00</td>
+                        <td>extra kelp</td>
+                        <td><input id="9-1" name="item" type="checkbox" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>$1.75</td>
+                        <td>side of sticks</td>
+                        <td><input id="9-2" name="item" type="checkbox" value="1.75"></td>
+                    </tr>
+                    <tr aria-rowspan="5" height="50px"><td colspan="9"></td></tr>
+<!--------------------------------------- Fourth Row of Items   Below ------------------------------------------>                    
+                    <tr>
+                        <th colspan="3"><img src="./pics/Fsoup.jpg"></th>
+                        <th colspan="3"><img src="./pics/Ksoup.jpg"></th>
+                        <th colspan="3"><img src="./pics/Asoup.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Freekeh</td><td>$7.99</td>        
+                        <td><input id="10" name="item" type="checkbox" value="7.99"></td>
+                        <td colspan="1">Kishik</td><td>$8.99</td>         
+                        <td><input id="11" name="item" type="checkbox" value="8.99"></td>
+                        <td colspan="1">Adas Bil Hamoud</td><td>$8.50</td>
+                        <td><input id="12" name="item" type="checkbox" value="8.5"></td>
+                    </tr>
+                    <tr>
+                        <td>$0.50</td>
+                        <td>Extra Garlic</td>
+                        <td><input id="10-1" name="item" type="checkbox" value="0.5"></td>
+                        <td>$1.25</td>
+                        <td>Pita Bread</td>
+                        <td><input id="11-1" name="item" type="checkbox" value="1.25"></td>
+                        <td>$1.25</td>
+                        <td>Pita Bread</td>
+                        <td><input id="12-1" name="item" type="checkbox" value="1.25"></td>
+                    </tr>
+                    <tr aria-rowspan="5" height="50px"><td colspan="9"></td></tr>
+<!--------------------------------------- Fifth Row of Items   Below ------------------------------------------>                    
+                    <tr>
+                        <th colspan="3"><img src="./pics/Psoup.jpg"></th>
+                        <th colspan="3"><img src="./pics/Tsoup.jpg"></th>
+                        <th colspan="3"><img src="./pics/Beef.jpg"></th>
+                    </tr>
+                    <tr>
+                        <td colspan="1">Potato Soup</td><td>$7.75</td>
+                        <td><input id="13" name="item" type="checkbox" value="7.75"></td>
+                        <td colspan="1">Tomato Soup</td><td>$8.50</td>
+                        <td><input id="14" name="item" type="checkbox" value="8.5"></td>
+                        <td colspan="1">Beef Soup</td><td>$8.99</td>  
+                        <td><input id="15" name="item" type="checkbox" value="8.99"></td>
+                    </tr>
+                    <tr>
+                        <td>$1.75</td>
+                        <td>Add Bacon</td>
+                        <td><input id="13-1" name="item" type="checkbox" value="1.75"></td>
+                        <td>$0.75</td>
+                        <td>Add Oregano</td>
+                        <td><input id="14-1" name="item" type="checkbox" value="0.75"></td>
+                        <td>$1.50</td>
+                        <td>Add Potatoes</td>
+                        <td><input id="15-1" name="item" type="checkbox" value="1.5"></td>
+                    </tr>
+                </table>
+                </form>
+                </div>
+                <br><br><br>
+        </main>
+        <footer>
+            <br>
+            <hr width="60%" align="center">
+            <br>
+            <h4><small><a href="jobApplication.html">Join</a> our crew today!!<br> &copy <i>Beaver Burger 2023</i></small></h4>
+        </footer>
+        <br><br>
+        </center>
+    </div>     <!-- Wrapper -->
+</center>
+</body>
+</html>

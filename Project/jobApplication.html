@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>Beaver Burgers | Job Application</title>
+</head>
+
+
+<body>
+<!--background: https://openverse.org/image/a62f16df-dd36-41a7-9624-bb5b1bf834be?q=wood%20plank-->
+    <center>
+    <div class="wrapper">
+        <br>
+        <center>
+        <header>
+            <nav align="right">
+                <a href="./index.html">
+                    <img src="./pics/LOGO.jpg" id="navLogo" title="Icon" alt="Navigation Bar" align="left">
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                    <li><a href="./index.html"><u>Homepage</u></a></li>
+                    <li><a href="./Menu.html"><u>Menu</u></a></li>
+                    <li><a href="./ContactUs.html"><u>Contact Us :D</u></a></li>
+                    <li><a href="./signInSignOut.html"><u>Sign In/Out</u></a></li>
+                    <!--  This nbsp below makes the end of the ul look like the beginning  -->
+                </ul>
+            </nav>
+        </header>
+        </center>
+        <br><br>
+        <center>
+        <main>
+            <br>
+            <h1>Complete this form to apply!<br><br>Join Beaver Burgers Today!</h1>
+            <br><br><br>
+            <div id="applicationTable">
+            <table border="1px" align="center">
+            <form method="get" id="myForm"></form>
+                <tr>
+                    <td><br><label for="userName">&nbsp;*  Full Name:</label></td>
+                    <td><br><input id="userName"  type="text" name="Fullname" placeholder="Enter your name"  required="required"/><br></td>
+                </tr>
+                <tr>
+                    <td><br><label for="userEmail">&nbsp;*  Email:</label></td>
+                    <td><br><input id="userEmail"  type="email" placeholder="yourEmailHere@example.com" name="E-mailAddress" required="required" size="20"><br></td>
+                </tr>
+                <tr>
+                    <div class="radio"><center>
+                        <td><br><label for="userEducation">Eduacation Level:</label><br></td>
+                        <td><br>
+                        <input id="userEducation" type="radio" name="EduacationLvl">In Highschool<br>
+                        <input id="userEducation" type="radio" name="EduacationLvl">GED/Diploma<br>
+                        <input id="userEducation" type="radio" name="EduacationLvl">Some College<br>
+                        <input id="userEducation" type="radio" name="EduacationLvl">Bachelor Degree<br>
+                        <input id="userEducation" type="radio" name="EduacationLvl">Masters Degree<br>
+                        </td>
+                        </div>
+                </tr>
+                <tr>
+                    <div class="checkBox">
+                        <td><br><label for="userJobTitle">Desired Job at Beaver Burgers:</label><br>  </td>
+                        <td><br>
+                            
+                            <input id="userJobTitle" type="checkbox" name="Janitor/Custodian" value="Janitor/Custodian">Custodian/Janitor<br>
+                            <input id="userJobTitle" type="checkbox" name="full stack Web Dev" value="full stack Web Dev">Full Stack Web Dev<br>
+                            <input id="userJobTitle" type="checkbox" name="Fry Cook" value="Fry Cook"> Fry Cook<br>
+                            <input id="userJobTitle" type="checkbox" name="Burger Builder" value="Burger Builder"> Burger Builder<br>
+                            <input id="userJobTitle" type="checkbox" name="Cashier/Salesman" value="Cashier/Salesman"> Cashier/Salesman<br>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="TimeOfDay">
+                        <td><br><label for="userShiftHours">Which shifts will you be available<br><small>You can select more than one!</small> </label><br>  </td>
+                        <td><br><select multiple>
+                            <option id="userShiftHours" value="Morning Shift">Morning    7am - 3pm</option>
+                            <option id="userShiftHours" value="Day Shift">Noon    11am - 9pm</option>
+                            <option id="userShiftHours" value="Night Shift">Night    3pm - 11pm</option>
+                            </select>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <td><br><label for="userDetails">Other Details: </label></td>
+                    <td><br><textarea id="userDetails" cols="40" rows="10" placeholder="Enter Text Here:" style="resize: none;"></textarea></td>
+                </tr>
+                <tr>
+                    <td><br><input type="reset" value="clear"></td>
+                    <td><br><input type="submit" value="Save Date"></td>
+                </tr>
+            </table>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+        </main>
+        </center>
+        <br><br>
+        <footer>
+            <br>
+            <hr width="60%" align="center">
+            <br>
+        </footer>
+        <br><br>
+    </div>   </center>
+    </center> 
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signInStyle.css">
+    <script>
+        var userNameArray = new Array("User");
+        var userPasswordArray = new Array("1234");
+        //document.write("Hello World")
+        function signup(){
+            var newUserName = document.getElementById("newUserName").value;
+            var NewUserPassword = document.getElementById("newUserPassword").value;
+            userNameArray.push(newUserName);
+            userPasswordArray.push(NewUserPassword);
+
+            // .push adds to the end of the array
+        }
+
+        function logIn(){
+            var userName = document.getElementById("checkUserName").value;
+            var userPassword = document.getElementById("checkUserPassword").value;
+            for(i=0; i < userNameArray.length; i++){
+                if(userName === "Bemidji" && userPassword === "Beaver"){
+                    window.location.href=('aboutUs.html');
+                }
+                else if (userNameArray[i] === userName && userPasswordArray[i] === userPassword){
+                    document.getElementById("validation").value = "Welcome back " + userName;
+                }// if
+            }// for
+            
+        }
+
+        function signOut(){
+            var clear = " ";
+            document.getElementById("validation").value = clear;
+        }
+
+
+    </script>
+</head>
+<body>
+    <center>
+    <div class="wrapper">
+        <br>
+        <center>
+        <header>
+            <nav align="right">
+                <a href="./index.html">
+                    <img src="./pics/LOGO.jpg" id="navLogo" title="Icon" alt="Navigation Bar" align="left">
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul>
+                    <li><a href="./index.html"><u>Homepage</u></a></li>
+                    <li><a href="./Menu.html"><u>Menu</u></a></li>
+                    <li><a href="./ContactUs.html"><u>Contact Us :D</u></a></li>
+                    <li><a href="./signInSignOut.html"><u>Sign In/Out</u></a></li>
+                    <!--  This nbsp below makes the end of the ul look like the beginning  -->
+                </ul>
+            </nav>
+        </header>
+        </center>
+        <br><br>
+        <center>
+        <main>
+            <!--  Sign in page  -->
+            <section id="leftSection">
+                <p>
+                    Sign up<br>
+                    <hr>
+                    <form method="get" id="myForm"><center>
+                        <table id="leftTable" border="1" cellpadding="5" cellspacing = "5">
+                            <tr>
+                                <td>
+                                    <label> Enter a username:</label>
+                                </td>
+                                <td>
+                                    <input id="newUserName" type="text" placeholder="John Doe" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label> Enter a password:</label>
+                                </td>
+                                <td>
+                                    <input id="newUserPassword" type="password" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Enter your Email:</label></td>
+                                <td><br><input id="userEmail"  type="email" placeholder="yourEmailHere@example.com" name="E-mailAddress" required="required" size="20">
+                            </tr>
+                            <tr>
+                                <td><br><label for="favoriteColor">Select your favorite color:</label><br></td>
+                                <td><br>
+                                <input id="favoriteColor" type="radio" name="EduacationLvl">Red<br>
+                                <input id="favoriteColor" type="radio" name="EduacationLvl">Green<br>
+                                <input id="favoriteColor" type="radio" name="EduacationLvl">Blue<br>
+                                <input id="favoriteColor" type="radio" name="EduacationLvl">White<br>
+                                <input id="favoriteColor" type="radio" name="EduacationLvl">Black<br>
+                                <br></td>
+                            </tr>
+                            <tr>
+                                <td><br><label for="emailSubscriber">Click to get updates to your email</label><br>  </td>
+                                <td><br>
+                                    <input id="emailSubscriber" type="checkbox" name="Email Me" value=""><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" value="Sign Up" onclick="signup()">
+                                    </td>
+                                    <td>
+                                        <input type="reset" value="Clear">
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </center></form>
+                </p>
+            </section>
+            <!-- log in page  -->
+            <section id="rightSection">
+                <p>
+                    Log in  |  Bemidji   Beaver <br>
+                    <hr>
+                    <form>
+                        <center>
+                        <table id="rightTable" border="1" cellpadding="5" cellspacing = "5">
+                            <tr>
+                                <td>
+                                    <label> Enter your username:</label>
+                                </td>
+                                <td>
+                                    <input id="checkUserName"   type="text" placeholder="John Doe" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label> Enter your password:</label>
+                                </td>
+                                <td>
+                                    <input id="checkUserPassword"  type="password" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" value="Log In" onclick="logIn()">
+                                </td>
+                                <td>
+                                    <input type="reset" value="Clear">
+                                </td>
+                            </tr>
+                        </table>
+                        </center>
+                    </form>
+                </p>
+            </section>
+        </main>
+        </center>
+        <center>
+        <footer>
+            <textarea id="validation" cols="50" rows="2" readonly placeholder="Sign In Information Here"></textarea>
+            <input type="button"  value="Sign Out"  onclick="signOut()">
+            <br><br>
+            <hr width="60%" align="center">
+            <br>
+            <h4><small><a href="jobApplication.html">Join</a> our crew today!!<br> &copy <i>Beaver Burger 2023</i></small></h4>
+        </footer>
+        </center>
+    </div>
+    </center>
+</body>
+</html>
